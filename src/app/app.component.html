@@ -1,0 +1,10 @@
+<div *ngIf="digimon$ | async as digimons">
+  <p>Digimons</p>
+  <p>Number of digimons: {{ digimons.length }}</p>
+
+  <ul>
+    <li *ngFor="let digimon of digimons">
+      {{ digimon.name }}
+    </li>
+  </ul>
+</div>
